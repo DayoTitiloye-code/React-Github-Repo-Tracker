@@ -10,4 +10,4 @@ const InputForm = () =>{
     )
 }
 
-export default InputForm
+export default InputForm;
