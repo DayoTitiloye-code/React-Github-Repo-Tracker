@@ -7,13 +7,16 @@ import Home from './Pages/Home'
 import Repos from './Pages/Repos'
 import Repo from './Pages/Repo'
 
+
+
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home/>}></Route>
-      <Route path="repos" element={<Repos/>}>
-        <Route path=":repo" element={<Repo/>}></Route>
+      <Route path="/" element={<Home/>}>
       </Route>
+      <Route path="Repos" element={<Repos/>}>
+          <Route path=":Repo" element={<Repo/>}></Route>
+        </Route>
     </Routes>
 
     
