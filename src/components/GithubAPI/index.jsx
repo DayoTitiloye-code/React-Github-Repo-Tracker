@@ -17,14 +17,14 @@ const GithubAPI = ({searchValue}) =>{
 
     }, [searchValue])
     
-    const reposArray = githubData.map((r, index) =>{
+    const reposArray = githubData.map((r, index) => {
         return <RepoDisplay key={index} data={r}/>
     })
     
     return(
-        <>
+        <div id="repos">
         {reposArray}
-        </>
+        </div>
     )
 }
 
