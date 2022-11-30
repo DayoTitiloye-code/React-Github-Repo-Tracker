@@ -1,18 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Questrial&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 body {
     background-color: #0D1117;
     color: #c9d1d9;
 }
 
+svg {
+    top: -20px;
+    width: 60px;
+    height: auto;
+    margin: 0;
+}
 
+#icon {
+    margin: 0;
+}
 
 #form{
     /* border: 1px solid black; */
     padding: 20px 0;
     margin: 0 auto;
-    width: 28vw;
+    width: 30%;
     background-color: #161B22;
     border-radius: 6px;
 }
@@ -24,6 +34,7 @@ form{
 
 label {
     font-family: 'Noto Sans';
+    line-height: 30px;
 }
 
 #repos {
@@ -34,6 +45,25 @@ label {
     margin: 30px 3em 0;
 }
 
+@media only screen and (max-width: 1250px) {
+    #repos {
+        grid-template-columns: 1fr 1fr;
+    }
+    #form {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #repos {
+        grid-template-columns: 1fr;
+        width: 300px;
+    }
+    #form {
+        width: 80%;
+    }
+}
+
 .repodisp {
     text-align: center;
     border: 1px solid black;
@@ -41,6 +71,14 @@ label {
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 0 20px;
+    font-family: 'Inconsolata';
+    transition: 0.5s;
+    min-width: 300px;
+}
+
+.repodisp:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 .repodisp h1 {
@@ -52,10 +90,21 @@ label {
     background-color: #238636;
     font-family: 'Noto Sans';
     border: none;
-    color: #c9d1d9;
+    color: white;
     border-radius: 6px;
     width: 80px;
     height: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#button:hover {
+    background-color: #43b85a;
+    transition: 0.5s;
+}
+
+::placeholder{
+    font-family: 'Inconsolata';
 }
 
 #header{
@@ -68,9 +117,19 @@ label {
     font-family: 'Manrope', sans-serif;
     text-align: center;
     font-size: 50px;
+    margin-top: 20px;
 }
 
 #icon{
     font-size: 100px;
     padding-left: 20px;
+}
+
+a {
+    cursor: pointer;
+    color: #58A6FF;
+}
+
+a:hover {
+    text-decoration: underline;
 }

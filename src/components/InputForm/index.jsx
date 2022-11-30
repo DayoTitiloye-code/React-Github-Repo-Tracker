@@ -16,8 +16,8 @@ const InputForm = ({ setSearchValue }) =>{
     return(
         <div id='form'>
         <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Enter Here:</label>
-            <input type="text" placeholder='Your Github username here...' id="name" value={textInput} 
+            <label htmlFor="name">Type a Github Username:</label>
+            <input type="text" placeholder='"StrangeElephant"' id="name" value={textInput} 
             onChange={handleChange}/>
             <input type="submit" value="Search" id="button"/>
         </form>
