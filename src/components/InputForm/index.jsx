@@ -19,7 +19,7 @@ const InputForm = ({ setSearchValue }) =>{
             <label htmlFor="name">Enter Here:</label>
             <input type="text" placeholder='Your Github username here...' id="name" value={textInput} 
             onChange={handleChange}/>
-            <input type="submit" value="Search"/>
+            <input type="submit" value="Search" id="button"/>
         </form>
         </div>
     )
