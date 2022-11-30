@@ -6,11 +6,7 @@ body {
     color: #c9d1d9;
 }
 
-.home > h1{
-    font-family: 'Manrope', sans-serif;
-    text-align: center;
-    font-size: 50px;
-}
+
 
 #form{
     /* border: 1px solid black; */
@@ -62,3 +58,19 @@ label {
     height: 30px;
 }
 
+#header{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#header h1 {
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+#icon{
+    font-size: 100px;
+    padding-left: 20px;
+}
