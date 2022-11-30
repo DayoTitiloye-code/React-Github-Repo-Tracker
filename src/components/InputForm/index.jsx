@@ -14,12 +14,14 @@ const InputForm = ({ setSearchValue }) =>{
     }
 
     return(
+        <div id='form'>
         <form onSubmit={handleSubmit}>
-            <label htmlFor="name"></label>
+            <label htmlFor="name">Enter Here:</label>
             <input type="text" placeholder='Your Github username here...' id="name" value={textInput} 
             onChange={handleChange}/>
             <input type="submit" value="Search"/>
         </form>
+        </div>
     )
 }
 

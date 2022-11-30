@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Questrial&display=swap');
+
+.home > h1{
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+#form{
+    /* border: 1px solid black; */
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 30vw;
+}
+
+form{
+    display: flex; 
+    justify-content: space-evenly;
+}
+
 #repos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
