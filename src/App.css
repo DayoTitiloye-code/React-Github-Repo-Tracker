@@ -1,3 +1,8 @@
+body {
+    background-color: #0D1117;
+    color: #c9d1d9;
+}
+
 #repos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -8,5 +13,8 @@
 .repodisp {
     text-align: center;
     border: 1px solid black;
+    background-color: #161B22;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
