@@ -17,6 +17,7 @@
 
 ## Bugs
 - "target: '_blank'" not taking users to another page when they click link to the repository
+- Repo names with underscores do not format correctly
 
 ## Wins
 - API calls
